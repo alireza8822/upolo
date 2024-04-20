@@ -1,0 +1,305 @@
+{
+	"variables": [],
+	"info": {
+		"name": "upolo",
+		"_postman_id": "72ae2084-fbd1-0fa4-3a5f-5d5e9b67380d",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/api/companies",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/companies",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 51|Sd2PiIYYFaMyY7I7kyMgzsRUNG8bgOD3FR4uqfJJ",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "        {\n            \"name\": \"sara\",\n            \"email\": \"sara@example.com\"\n        }"
+				},
+				"description": "create company"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/companies/1/contacts u",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/companies/1/contacts ",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 50|FTZGVp8qHfUSF2y5dyrRViouGjnNafGMy1xP0QbP",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "status",
+							"value": "Paying",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "get list of contacts of specific company"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/contacts/1/notes",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/contacts/1/notes",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 53|D36IFJjOXfq1LwEXYMdwasuhRmkAEQC0pdQX9ozK",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n        {\n        \t\n        \"note\": \"This is a new note for the contact.\"\n            \n        }\n    "
+				},
+				"description": "add notes"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/search",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/search",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 50|FTZGVp8qHfUSF2y5dyrRViouGjnNafGMy1xP0QbP",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"query\": \"test\"\n}\n"
+				},
+				"description": "search"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/contacts/1",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/contacts/1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 49|RPF32Emrb568cLCMKXiv0VuIkuE2wSdpq70OJqZb",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "get specific contact"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/contacts",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/contacts",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 1561|0qjdBmpMZIITjKrcljFXZIh9clH6iLtmIVjsyaVv",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "get list of contacts"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/contacts/1",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/contacts/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"contacts\": [\n        {\n            \"name\": \"alireza11\",\n            \"email\": \"alirez11a@gmail.com\"\n        }\n    ]\n}\n"
+				},
+				"description": "update contacts"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/login",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "alireza@gmail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "sanctum"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/companies",
+			"request": {
+				"url": "http://127.0.0.1:8002/api/companies",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 52|fv7kgSjmYtFRfPwWuzO3k4ufGQ6XDI9HQP9oN9k0",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"csvPath\":\"/home/mreza/csv_files/PdM_telemetry.csv\",\n    \"label_column\":\"pressure\",\n    \"model\":\"regression\"\n\n}\n"
+				},
+				"description": "get list of companies"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/companies/1/contacts ",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/companies/1/contacts ",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 1569|1UHVphCYJ1KgAyM2cxWZ0XaSOcbeQ9UiD9C5157U",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "",
+						"value": "",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"contacts\": [\n        {\n            \"name\": \"alireza\",\n            \"email\": \"alireza@gmail.com\"\n        },\n        {\n            \"name\": \"sara\",\n            \"email\": \"sara@example.com\"\n        },\n        {\n            \"name\": \"john\",\n            \"email\": \"john@example.com\"\n        }\n    ]\n}\n"
+				},
+				"description": "create contacts"
+			},
+			"response": []
+		}
+	]
+}
