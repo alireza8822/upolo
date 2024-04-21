@@ -15,5 +15,7 @@ This README provides an overview of a Laravel project for managing contacts and 
 3. commands:
 4. composer install
 5. cp .env.example .env
- php artisan key:generate
- php artisan migrate
+6.  php artisan key:generate
+7.  php artisan migrate 
+
+
